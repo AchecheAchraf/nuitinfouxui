@@ -846,56 +846,6 @@ ul.social_icon li a:hover {
      color: #828181;
      opacity: 1;
 }
-body {
-     background-color: #1a1a1a;
-     color: #ffcc00;
-     font-family: 'Comic Sans MS', cursive, sans-serif;
-  }
-  
-  .weird_banner {
-     border: 10px solid #ffcc00;
-     padding: 20px;
-     margin: 50px;
-     background-color: #666;
-  }
-  
-  .funky_club {
-     transform: rotate(3deg);
-  }
-  
-  .bizarre_img {
-     border-radius: 50%;
-     box-shadow: 0 0 20px #ffcc00;
-     margin: 10px;
-  }
-  
-  .crazy_heading {
-     text-transform: uppercase;
-     font-size: 40px;
-     color: #ff6666;
-  }
-  
-  .strange_text {
-     font-size: 18px;
-     line-height: 1.6;
-     margin-top: 20px;
-     text-shadow: 2px 2px 4px #666;
-  }
-  .moving-image {
-     position: relative;
-  }
-  
-  .animated-image img {
-     animation: moveImage 2s ease-in-out infinite alternate;
-  }
-  
-  @keyframes moveImage {
-     0% {
-        transform: translateX(0);
-     }
-     100% {
-        transform: translateX(20px);
-     }}
-  
+
 
 /** end contact section **/
