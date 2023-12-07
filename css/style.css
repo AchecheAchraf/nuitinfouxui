@@ -32,6 +32,71 @@ body {
      background-repeat: no-repeat;
 }
 
+/* Définition des animations disco pour chaque bouton */
+@keyframes disco1 {
+  0% { background-color: #ff0000; } /* Rouge */
+  25% { background-color: #ffcc00; } /* Orange */
+  50% { background-color: #33cc33; } /* Vert */
+  75% { background-color: #3399ff; } /* Bleu */
+  100% { background-color: #ff00ff; } /* Rose */
+}
+
+@keyframes disco2 {
+  0% { background-color: #00ffcc; } /* Turquoise */
+  25% { background-color: #cc00ff; } /* Violet */
+  50% { background-color: #ff6600; } /* Orange foncé */
+  75% { background-color: #9966ff; } /* Violet clair */
+  100% { background-color: #00cc66; } /* Vert clair */
+}
+
+@keyframes disco3 {
+  0% { background-color: #ff9900; } /* Orange */
+  25% { background-color: #ff3366; } /* Rose foncé */
+  50% { background-color: #66ccff; } /* Bleu clair */
+  75% { background-color: #ff6666; } /* Rouge clair */
+  100% { background-color: #33cc33; } /* Vert clair */
+}
+
+/* Appliquer les animations disco aux boutons avec des retards décalés */
+.club_btn a:nth-child(1) {
+  animation: disco1 2s infinite; /* L'animation dure 2 secondes et se répète indéfiniment */
+}
+
+.club_btn a:nth-child(2) {
+  animation: disco2 2s infinite; /* L'animation dure 2 secondes et se répète indéfiniment */
+}
+
+.club_btn a:nth-child(3) {
+  animation: disco3 2s infinite; /* L'animation dure 2 secondes et se répète indéfiniment */
+}
+
+/* Style supplémentaire pour les boutons si nécessaire */
+.club_btn a:hover {
+  text-decoration: underline;
+}
+
+.club_btn a:hover {
+     text-decoration: underline;
+   }
+   
+   /* Style du bouton "Map" */
+   .map-btn {
+     transition: transform 0.01s ease-out; /* Transition pour un mouvement fluide */
+   }
+   
+   /* Ajout d'une classe pour le mouvement du bouton "Map" lors du survol */
+   .map0:hover {
+     transform: translateY(200px); /* Déplacement vers le haut de 10 pixels */
+   }
+   .map-btn:hover {
+     transform: translateY(-200px); /* Déplacement vers le haut de 10 pixels */
+   }
+   .map1:hover {
+     transform: translateY(200px); /* Déplacement vers le haut de 10 pixels */
+   }
+
+  
+
 a {
      color: #1f1f1f;
      text-decoration: none !important;
