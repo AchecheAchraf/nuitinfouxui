@@ -19,8 +19,100 @@
       <link rel="stylesheet" href="css/responsive.css">
       <!-- awesome fontfamily -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- 
+ <script src="js/script.js"></script>
    </head>
+   <style>
+      .animated-text {
+         display: inline-block;
+         white-space: nowrap;
+         animation: moveWords 3s infinite alternate, rotateWords 3s infinite alternate, changeColor 6s infinite alternate, shake 0.1s infinite;
+      }
+   
+      .animated-text:nth-child(1) {
+         animation-delay: 0s;
+         color: #ff0000; /* Red */
+      }
+   
+      .animated-text:nth-child(2) {
+         animation-delay: 0.1s;
+         color: #00ff00; /* Green */
+      }
+   
+      @keyframes moveWords {
+         0%, 100% {
+            transform: translateX(0);
+         }
+         25% {
+            transform: translateX(20px);
+         }
+         50% {
+            transform: translateX(-20px);
+         }
+         75% {
+            transform: translateX(15px);
+         }
+      }
+   
+      @keyframes rotateWords {
+         0%, 100% {
+            transform: rotate(0deg);
+         }
+         25% {
+            transform: rotate(45deg);
+         }
+         50% {
+            transform: rotate(-45deg);
+         }
+         75% {
+            transform: rotate(30deg);
+         }
+      }
+   
+      @keyframes changeColor {
+         0%, 100% {
+            color: #ff0000; /* Red */
+         }
+         10% {
+            color: #00ff00; /* Green */
+         }
+         20% {
+            color: #0000ff; /* Blue */
+         }
+         30% {
+            color: #ff00ff; /* Purple */
+         }
+         40% {
+            color: #ffff00; /* Yellow */
+         }
+         50% {
+            color: #00ffff; /* Cyan */
+         }
+         60% {
+            color: #ff9900; /* Orange */
+         }
+         70% {
+            color: #9900ff; /* Violet */
+         }
+         80% {
+            color: #33cc33; /* Lime */
+         }
+         90% {
+            color: #993366; /* Rose */
+         }
+      }
+   
+      @keyframes shake {
+         0%, 100% {
+            transform: translateX(0);
+         }
+         50% {
+            transform: translateX(10px);
+         }
+      }
+   </style>
+   
+
+
    <!-- body -->
    <body class="main-layout">
       <!-- loader  -->
@@ -47,8 +139,6 @@
                   </div>
                   <div class="col-sm-9">
                      <ul class="email text_align_right">
-                        
-                        
                      </ul>
                   </div>
                </div>
@@ -64,9 +154,10 @@
                   <div class="club">
                      <figure><img class="sm_n0" src="images/bbnner.png"> <img class="tes_n0" src="images/banner1.jpg"> </figure>
                      <div class="poa_t">
-                        <h1>Changement Climatique</h1>
-                        <p>Un phénomène global de transformation du climat caractérisé par une augmentation générale des températures moyennes,<br> et qui modifie durablement les équilibres météorologiques et les écosystèmes.</p>
+                        <h1 class="animated-text">Changement Climatique</h1>
+                        <p class="animated-text">Un phénomène global de transformation du climat caractérisé par une augmentation générale des températures moyennes,<br> et qui modifie durablement les équilibres météorologiques et les écosystèmes.</p>
                      </div>
+                     
                   </div>
                </div>
             </div>
@@ -88,10 +179,13 @@
                            <div class="container-fluid">
                               <div class="carousel-caption relative">
                                  <div class="bluid">
-                                    <div class="foot_img">
-                                       <figure><img src="images/foot.png" alt="#"/></figure>
+                                    <div class="foot_img animated-foot">
+                                       <figure class="animated-figure">
+                                          <img src="images/foot.png" alt="#">
+                                       </figure>
                                     </div>
-                                    <a class="" > </a>
+                                    <a class="animated-link"></a>
+                                    
                                  </div>
                               </div>
                            </div>
