@@ -846,6 +846,68 @@ ul.social_icon li a:hover {
      color: #828181;
      opacity: 1;
 }
-
-
-/** end contact section **/
+@keyframes mixAnimations {
+     0% {
+        transform: translateY(0) rotate(0deg) translateX(30);
+     }
+     50% {
+        transform: translateY(10px) rotate(360deg) translateX(30px);
+     }
+     100% {
+        transform: translateY(10) rotate(360deg) translateX(30);
+     }
+  }
+  
+  .animated-foot {
+     animation: mixAnimations 1s ease-in-out infinite;
+  }
+  .animated-word {
+     display: inline-block;
+     white-space: nowrap;
+  }
+  
+  @keyframes moveWords {
+     0%, 100% {
+        transform: translateX(0);
+     }
+     25% {
+        transform: translateX(20px);
+     }
+     50% {
+        transform: translateX(-20px);
+     }
+     75% {
+        transform: translateX(15px);
+     }
+  }
+  
+  @keyframes rotateWords {
+     0%, 100% {
+        transform: rotate(0deg);
+     }
+     25% {
+        transform: rotate(45deg);
+     }
+     50% {
+        transform: rotate(-45deg);
+     }
+     75% {
+        transform: rotate(30deg);
+     }
+  }
+  
+  @keyframes changeColor {
+     0%, 100% {
+        color: #ff0000; /* Red */
+     }
+     25% {
+        color: #00ff00; /* Green */
+     }
+     50% {
+        color: #0000ff; /* Blue */
+     }
+     75% {
+        color: #ff00ff; /* Purple */
+     }
+  }
+  
