@@ -41,14 +41,22 @@ body {
          transform: translateY(0);
      }
      25% {
-         transform: translateY(-50px);
+         transform: translateY(-300px);
      }
      50% {
-         transform: translateY(50px);
+         transform: translateY(300px);
      }
      75% {
-         transform: translateY(-50px);
+         transform: translateY(-300px);
      }
+ }
+
+ .carousel-control-prev:hover {
+     animation: vibrate 1s ease infinite;
+ }
+ 
+ .carousel-control-next:hover {
+     animation: vibrate 1s ease infinite;
  }
 
 /* Définition des animations disco pour chaque bouton */
