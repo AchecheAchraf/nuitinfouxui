@@ -31,6 +31,25 @@ body {
      background-position: center;
      background-repeat: no-repeat;
 }
+/*vibration homme*/
+.about .titlepage:hover {
+     animation: vibrate 0.001s ease-in-out infinite;
+ }
+ 
+ @keyframes vibrate {
+     0%, 100% {
+         transform: translateY(0);
+     }
+     25% {
+         transform: translateY(-50px);
+     }
+     50% {
+         transform: translateY(50px);
+     }
+     75% {
+         transform: translateY(-50px);
+     }
+ }
 
 /* Définition des animations disco pour chaque bouton */
 @keyframes disco1 {
@@ -95,7 +114,41 @@ body {
      transform: translateY(200px); /* Déplacement vers le haut de 10 pixels */
    }
 
-  
+
+
+.sports .titlepage:hover h2,
+.sports .titlepage:hover p {
+    color: #ddebf8;
+}
+
+/* Ajoutez le style initial du bloc caché */
+.hidden-block {
+     display: none;
+     background-color: #f0f0f0;
+     padding: 20px;
+     margin-top: 10px;
+   }
+   
+   /* Affichez le bloc caché lorsqu'il est survolé */
+   .sports_main:hover .hidden-block {
+     display: block;
+   }
+
+   .sports_main {
+     overflow: hidden; /* Hide overflow content */
+     filter: blur(5px); /* Initial blur effect */
+     transition: filter 0.3s ease-in-out; /* Add transition for a smooth effect */
+ }
+ 
+ .sports_main:hover {
+     filter: blur(0); /* Clear the blur effect on hover */
+ }
+ 
+ .sports_main img {
+     transition: transform 0.3s ease-in-out; /* Optional: Add transition to image */
+ }
+ 
+ 
 
 a {
      color: #1f1f1f;
@@ -123,6 +176,8 @@ h6 {
      color: #111111;
      margin: 0
 }
+
+
 
 h1 {
      font-size: 24px
